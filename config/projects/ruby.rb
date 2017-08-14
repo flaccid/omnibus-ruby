@@ -4,7 +4,7 @@
 # All Rights Reserved.
 #
 
-RUBY_VERSION = '2.1.6'
+RUBY_VERSION = '2.4.1'
 
 name 'ruby'
 # version RUBY_VERSION
