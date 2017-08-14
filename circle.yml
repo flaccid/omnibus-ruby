@@ -8,5 +8,5 @@ jobs:
       - run: bundle config github.https true
       - run: bundle install --binstubs
       # quick hack
-      - run: mkdir -p /opt/ruby
+      - run: "sudo mkdir -p /opt/ruby && sudo chmod 777 /opt/ruby"
       - run: bin/omnibus build ruby
