@@ -7,4 +7,6 @@ jobs:
       - checkout
       - run: bundle config github.https true
       - run: bundle install --binstubs
+      # quick hack
+      - run: mkdir -p /opt/ruby
       - run: bin/omnibus build ruby
