@@ -5,5 +5,6 @@ jobs:
       - image: circleci/ruby:2.4.1-node
     steps:
       - checkout
+      - run: bundle config github.https true
       - run: bundle install --binstubs
       - run: bin/omnibus build ruby
