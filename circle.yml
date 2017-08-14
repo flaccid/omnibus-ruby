@@ -12,6 +12,5 @@ jobs:
       # external build dep (for debian)
       - run: sudo apt-get -y install fakeroot
       - run: bin/omnibus build ruby
-general:
-  artifacts:
-    - pkg
+      - store_artifacts:
+          path: pkg
