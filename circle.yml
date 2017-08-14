@@ -9,4 +9,6 @@ jobs:
       - run: bundle install --binstubs
       # quick hack
       - run: "sudo mkdir -p /opt/ruby && sudo chmod 777 /opt/ruby"
+      # external build dep (for debian)
+      - run: sudo apt-get -y install fakeroot
       - run: bin/omnibus build ruby
